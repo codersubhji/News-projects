@@ -1,0 +1,69 @@
+.df {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(209, 208, 208);
+    margin-top: 1rem;
+    padding: 2rem 0rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.main-title {
+    width: 100%;
+    background-color: rgb(233, 234, 234);
+
+    h1 {
+        margin-left: 1rem;
+        font-size: 2.3rem;
+    }
+}
+.grid_box {
+    width: 100%;
+    
+}
+.sports {
+    display: flex;
+    gap: 1rem;
+}
+
+.grid {
+    position: relative;
+    width: 240px;
+    cursor: pointer;
+    img {
+        width: 200px;
+        height: 150px;
+        border-radius: 8px;
+    }
+    a {
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .share-grid {
+        position: absolute;
+        top: 0.8rem;
+        right: 3rem;
+        font-size: 1.8rem;
+        padding: 0.3rem;
+        color: rgb(19, 18, 18);
+        background-color: white;
+        border-radius: 50px;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .grid{
+        background-color: #fff;
+        text-align: center;
+        margin-top:1rem;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .grid a {
+        font-size: 0.8rem;
+    }
+}

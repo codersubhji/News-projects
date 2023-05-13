@@ -1,0 +1,115 @@
+.footer {
+    width: 100%;
+    padding: 50px 50px 0px;
+    background-color: #e3e2e2;
+    min-height: 200px;
+    border: 1px solid black;
+
+    &__box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+
+        &__left {
+            display: flex;
+            justify-content: space-around;
+            padding-right: 20px;
+
+            &__categories {
+                p {
+                    font-size: 28px;
+                    margin-bottom: 30px;
+                    color: #333;
+                }
+            }
+
+            &__contactUs {
+                div {
+                    margin-bottom: 15px;
+                    width: max-content;
+                }
+            }
+
+            &__categories div p {
+                font-size: 20px;
+                color: #333;
+                cursor: pointer;
+                padding: 0 10px;
+                border-left: 1px solid #fff0;
+                border-right: 1px solid #fff0;
+                transition: 0.3s;
+
+                &__categories div p:hover {
+                    color: #333;
+                    border-left: 1px solid #333;
+                    border-right: 1px solid #333;
+                }
+            }
+            &__contact {
+                margin-left: 10px;
+                p {
+                    font-size: 28px;
+                    margin-bottom: 30px;
+                    color: #333;
+                }
+                &__contact div {
+                    font-size: 17px;
+                    margin-bottom: 15px;
+                    color: #aaa;
+                    color: #333;
+                }
+            }
+            .icon{
+                margin: 10px;
+                font-size: 1.5rem;
+            }
+        }
+        .footer__box__right__newsletter p{
+            padding: 1rem;
+        }
+        .footer__box__right__newslette__email input{
+            padding: 0.8rem 3rem;
+            border-radius: 8px;
+        }
+        .footer__box__right__newslette__email__button{
+            padding: 0.8rem 1.5rem;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .footer__box__right__newslette__email__button:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+    &__copyrights{
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        letter-spacing: 1px;
+
+    }
+}
+@media(max-width:670px){
+    .footer{
+        width: 100%;
+        padding: 50px 50px 0px;
+        background-color: #e3e2e2;
+        min-height: 200px;
+        border: 1px solid black;
+    }
+    .footer__box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .footer__box__left{
+        display: grid;
+        flex-direction: column;
+    }
+    .footer__box__right__newslette__email__input{
+        display: grid;width: 100%;
+    }
+}
+

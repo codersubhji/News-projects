@@ -1,0 +1,175 @@
+.header {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        &__nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                height: 5rem;
+                max-width: 95%;
+                margin: 0 auto;
+        }
+        &__links {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                gap: 2rem;
+        }
+}
+
+.nav__Logo {
+        text-align: center;
+        font-size: 2rem;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav__navbar ul {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+        margin-top: 1rem;
+}
+
+.nav__navbar ul a {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #0d0d0d;
+        font-weight: bolder;
+}
+
+.inp_btn {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        border: 1px solid #0b0b11;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        min-width: max-content;
+        background-color: #fff;
+        input {
+                outline: none;
+                border: none;
+        }
+
+        &__Search_icon {
+                color: #333;
+                font-size: 1rem;
+                cursor: pointer;
+        }
+}
+.open,
+.close,
+.bar {
+        display: none;
+}
+
+.result-box{
+        position: absolute;
+        top: 5.2rem;
+        right: 0;
+        margin: 0 2rem;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        background-color: #dedada;
+        padding: 1rem;
+       max-width:700px;
+        height: 400px;
+        overflow-y: scroll;
+        z-index: 800;
+        border-radius: 8px;
+.search-box{
+        display: flex;
+        align-items: center;
+        padding: 2px;
+} 
+.search-img{
+        width: 100px;
+        height: 60px;
+        margin-right: 1rem;
+        border-radius: 8px;
+}  
+  h5{
+        font-size: 0.8rem;
+  }   
+        @media(max-width:768px){
+                .search-box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .search-img{
+                        width: 250px;
+                        height: 150px;
+
+                }
+                }
+                h5{
+                        display: flex;
+                        align-items: center;
+                        // text-align: left;
+                        padding: 1rem;
+                        width: 60%;
+                }
+                
+
+        }
+}
+
+@media (max-width: 450px) {
+        .inp_btn input {
+                width: 4rem;
+        }
+}
+
+@media (max-width: 930px) {
+        .bar {
+                display: block;
+                font-size: 2rem;
+        }
+        .nav__navbar {
+                min-width: 100% !important;
+                position: absolute;
+                top:4rem;
+                left: 50%;
+                transform: translate(-50%, 0);
+                transition: all 0.4s ease-in-out;
+        }
+        .nav__navbar ul {
+                display: grid;
+                flex-direction: column;
+                width: 100%;
+                background-color:lightgrey;
+                padding: 1rem;
+                // margin: 10px;
+                border-radius: 8px;
+                box-shadow: 1px 0px 5px 0px;
+        }
+
+        .nav__navbar a {
+                color: #ffffff;
+        }
+
+        .links {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+        }
+        .show {
+                background-color: red;
+                visibility: hidden;
+                transform: translateY(-800px);
+                display: inline-block;
+        }
+        .open,
+        .close {
+                display: none;
+        }
+        .hide {
+                display: block;
+        }
+}
